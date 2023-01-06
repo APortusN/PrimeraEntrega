@@ -1,8 +1,8 @@
+let entrada = prompt("Seleccionar conversión unidades \n 1.Longitud \n 2.Masa \n 3.Tiempo \n 4.Salir")
+entrada = parseInt(entrada)
 
 function menu(){
     do{
-        let entrada = prompt("Seleccionar conversión unidades \n 1.Longitud \n 2.Masa \n 3.Tiempo \n 4.Salir")
-        entrada = parseInt(entrada)
         switch(entrada){
             case 1 : calculoLongitud()
                 break
@@ -34,7 +34,7 @@ function calculoLongitud(){
         default: alert ("Opción invalida")
             
     }
-    return menu()
+    menu()
 }
 
 function calculoMasa(){    
@@ -50,7 +50,7 @@ function calculoMasa(){
             break
         default: alert ("Opción invalida")
     }
-    return menu()
+    menu()
 }
 
 function calculoTiempo(){
@@ -69,7 +69,7 @@ function calculoTiempo(){
             break
         default: alert ("Opción invalida")
     }
-    return menu()
+    menu()
 }
 
 menu()
